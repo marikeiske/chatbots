@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chatbots & IA Inteligente | Sua Solução Digital</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+  />
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    /* Customizações simples */
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero-bg {
+      background: linear-gradient(
+          rgba(0, 123, 255, 0.8),
+          rgba(0, 123, 255, 0.8)
+        ),
+        url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80')
+          no-repeat center center/cover;
+      color: white;
+    }
+    .feature-icon {
+      font-size: 3rem;
+      color: #0d6efd;
+    }
+    footer {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm custom-navbar">
+
+    <style>
+        .custom-navbar {
+          background: linear-gradient(135deg, #004aad, #1e90ff);
+        }
+      
+        .navbar-light .navbar-nav .nav-link {
+          color: white;
+          transition: color 0.3s ease;
+        }
+      
+        .navbar-light .navbar-nav .nav-link:hover {
+          color: #dcdcdc;
+        }
+      
+        .navbar-light .navbar-brand {
+          color: white;
+        }
+      
+        .navbar-light .navbar-brand:hover {
+          color: #e0e0e0;
+        }
+      </style>
+      
+
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MK - Automações</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#depoimentos">Depoimentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<style>
+      .hero-btn {
+    transition: all 0.3s ease;
+  }
+
+  .hero-btn:hover {
+    background-color: #1e64c0b6; /* Azul mais escuro no hover */
+    transform: scale(1.05);    /* Aumenta levemente */
+    color: #fff;
+  }
+    /* Gradiente azul no fundo da seção */
+    #inicio {
+        background: linear-gradient(135deg, #004aad, #1e90ff);
+    }
+  
+    /* Animação flutuante */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+  
+    /* Robô animado padrão */
+    .robot-svg {
+      animation: float 3s ease-in-out infinite;
+      color: #fff;
+      width: 220px;
+      height: 220px;
+      margin-right: 60px;
+    }
+  
+    /* Responsividade: ajusta o tamanho do robô em telas menores */
+    @media (max-width: 768px) {
+      .robot-svg {
+        width: 150px;
+        height: 150px;
+        margin: 30px auto 0 auto;
+        display: block;
+      }
+    }
+  </style>
+  
+  <section id="inicio" class="text-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Texto do lado esquerdo -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="display-4 fw-bold mb-4">Transforme seu atendimento com <br> Chatbots e Agentes de IA</h1>
+          <p class="lead mb-4">Descubra como a automação com chatbots pode revolucionar o atendimento da sua empresa, aumentando vendas e otimizando recursos.</p>
+          <a href="#contato" class="btn btn-light hero-btn fw-bold px-4 py-2 mt-3">Quero Automatizar o meu negócio</a>
+        </div>
+  
+        <!-- Robô do lado direito -->
+        <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center mt-4 mt-lg-0">
+          <!-- Ícone de robô (SVG) -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="robot-svg" fill="currentColor" viewBox="0 0 16 16" >
+            <path d="M12 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+            <path d="M2.5 8a.5.5 0 0 0 0 1h1v1a2 2 0 0 0 2 2h5a2 2 0 0 0 2-2v-1h1a.5.5 0 0 0 0-1H2.5zm3.5 3v-1h4v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
+            <path d="M7 4h2v2H7V4z"/>
+            <path fill-rule="evenodd" d="M4 2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1v2a3 3 0 0 0 6 0v-2a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2H4zM3 4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3H3V4z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+    <!-- Hero Section End -->  
+
+  <!-- Sobre Section -->
+  <style>
+    .gradient-title {
+      background: linear-gradient(135deg, #004aad, #1e90ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    .icon-circle {
+      font-size: 2rem;
+      color: #004aad;
+      background: #e6f0ff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card-title {
+      font-size: 1.5rem;
+    }
+    .card-text {
+      font-size: 1rem;
+    }
+    .card-body {
+      padding: 2rem;
+    }
+    .card {
+      border-radius: 1rem;
+    }
+  </style>
+  
+  <section id="sobre" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold gradient-title">Meus Serviços de Automação com Chatbots</h2>
+      <div class="row g-4">
+        
+        <!-- Criação e Desenvolvimento -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <div class="icon-circle mx-auto mb-3">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h5 class="card-title fw-bold">Criação e Desenvolvimento</h5>
+              <p class="card-text">
+                Design de fluxos intuitivos; integração com WhatsApp, Facebook Messenger; personalização visual.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Implementação e Treinamento -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <div class="icon-circle mx-auto mb-3">
+                <i class="bi bi-gear-wide-connected"></i>
+              </div>
+              <h5 class="card-title fw-bold">Implementação e Treinamento</h5>
+              <p class="card-text">
+                Instalação nos seus canais; capacitação da equipe para gestão eficiente.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Consultoria Estratégica -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <div class="icon-circle mx-auto mb-3">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <h5 class="card-title fw-bold">Consultoria Estratégica</h5>
+              <p class="card-text">
+                Análise de necessidades; plano sob medida; métricas definidas e acompanhamento dos resultados.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <style>
+     .gradient-title {
+    background: linear-gradient(90deg, #0d6efd, #6f42c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .benefit-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+  }
+
+  .benefit-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  }
+  </style>
+  
+  <section id="beneficios" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold gradient-title">Benefícios da Automação com Chatbots</h2>
+      <div class="row g-4">
+  
+        <!-- Benefício 1 -->
+        <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-center p-4 border benefit-card h-100 shadow-sm bg-white">
+            <i class="bi bi-clock-history fs-1 text-primary mb-3"></i>
+            <h5 class="fw-bold">Disponibilidade 24/7</h5>
+            <p>Atendimento contínuo sem pausas, mesmo fora do horário comercial.</p>
+          </div>
+        </div>
+  
+        <!-- Benefício 2 -->
+        <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-center p-4 border benefit-card h-100 shadow-sm bg-white">
+            <i class="bi bi-cash-coin fs-1 text-success mb-3"></i>
+            <h5 class="fw-bold">Redução de Custos</h5>
+            <p>Diminua a carga da equipe e economize com processos automatizados.</p>
+          </div>
+        </div>
+  
+        <!-- Benefício 3 -->
+        <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-center p-4 border benefit-card h-100 shadow-sm bg-white">
+            <i class="bi bi-person-plus fs-1 text-warning mb-3"></i>
+            <h5 class="fw-bold">Geração de Leads</h5>
+            <p>Capte contatos qualificados automaticamente para impulsionar suas vendas.</p>
+          </div>
+        </div>
+  
+        <!-- Benefício 4 -->
+        <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="text-center p-4 border benefit-card h-100 shadow-sm bg-white">
+            <i class="bi bi-emoji-smile fs-1 text-danger mb-3"></i>
+            <h5 class="fw-bold">Melhoria da Experiência</h5>
+            <p>Respostas rápidas e personalizadas para encantar clientes.</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+    <!-- Sobre Section -->  
+  
+    <!-- Sobre Section End -->  
+
+  <!-- Depoimentos (opcional para aumentar confiança) -->
+  <section id="depoimentos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold gradient-title">O que dizem nossos clientes</h2>
+  
+      <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+  
+          <!-- Depoimento 1 -->
+          <div class="carousel-item active">
+            <div class="text-center px-4">
+              <blockquote class="blockquote">
+                <p class="fs-5">"A automação com chatbots transformou nosso atendimento. Resultados acima do esperado!"</p>
+              </blockquote>
+              <div class="mb-2">
+                <!-- Avaliação por estrelas -->
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-half text-warning"></i>
+              </div>
+              <figcaption class="blockquote-footer mt-3">Marina Barros, <cite title="Dentista">Dentista</cite></figcaption>
+            </div>
+          </div>
+  
+          <!-- Depoimento 2 -->
+          <div class="carousel-item">
+            <div class="text-center px-4">
+              <blockquote class="blockquote">
+                <p class="fs-5">"Chatbot personalizado que entende e responde às necessidades de nossos clientes."</p>
+              </blockquote>
+              <div class="mb-2">
+                <!-- Avaliação por estrelas -->
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <figcaption class="blockquote-footer mt-3">Jonas Lima, <cite title="Gerente de Marketing">Gerente de Marketing</cite></figcaption>
+            </div>
+          </div>
+  
+          <!-- Depoimento 3 -->
+          <div class="carousel-item">
+            <div class="text-center px-4">
+              <blockquote class="blockquote">
+                <p class="fs-5">"Reduzimos custos e aumentamos eficiência com o suporte automatizado."</p>
+              </blockquote>
+              <div class="mb-2">
+                <!-- Avaliação por estrelas -->
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <figcaption class="blockquote-footer mt-3">Osvaldo Campos, <cite title="Advogado">Advogado</cite></figcaption>
+            </div>
+          </div>
+  
+        </div>
+  
+  </section>
+  
+
+  <!-- Contato Section -->
+ <style>
+    #contato .gradient-title {
+  color: white !important;
+  background: none !important; /* remove gradiente se houver */
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+}
+
+    .whatsapp-btn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  color: #25D366; /* verde WhatsApp */
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid #25D366;
+}
+
+.whatsapp-btn:hover {
+  background-color: #25D366;
+  color: white;
+  transform: scale(1.1);
+}
+
+ </style>
+
+  <section id="contato" class="py-5 bg-primary text-white text-center">
+    <div class="container">
+      <h2 class="mb-4 fw-bold gradient-title">Fale Conosco</h2>
+      <p class="mb-4"><strong>Quer falar com a gente? Clique no botão abaixo para iniciar uma conversa pelo WhatsApp.</strong></p>
+      <a href="https://wa.me/5512988437895" target="_blank" rel="noopener noreferrer" 
+         class="btn btn-light btn-lg whatsapp-btn">
+        <i class="bi bi-whatsapp me-2" style="font-size: 1.5rem;"></i>Enviar mensagem no WhatsApp
+      </a>
+    </div>
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Ícone do Instagram à esquerda -->
+        <a href="https://instagram.com/marianakeiske" target="_blank" class="fs-3" style="color: #00acee;">
+          <i class="bi bi-instagram"></i>
+        </a>
+      <p class="mt-3">&copy; 2025. Todos os direitos reservados.</p>
+    </div>
+  </section>
+
+  <!-- Botão Voltar ao Topo -->
+<button id="btnTopo" title="Voltar ao topo">
+  ↑
+</button>
+
+<style>
+  #btnTopo {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 100;
+    background-color: #2834e4; /* roxo */
+    color: white;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(24, 88, 239, 0.705);
+  }
+  #btnTopo:hover {
+    background-color: #3639ed;
+    transform: scale(1.1);
+  }
+  #btnTopo.show {
+    opacity: 1;
+  }
+</style>
+
+<script>
+  // Seleciona o botão
+  const btnTopo = document.getElementById("btnTopo");
+
+  // Quando o usuário rolar a página para baixo 100px, mostra o botão
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btnTopo.classList.add("show");
+    } else {
+      btnTopo.classList.remove("show");
+    }
+  };
+
+  // Quando o botão for clicado, sobe suavemente ao topo
+  btnTopo.addEventListener("click", () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+</script>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
